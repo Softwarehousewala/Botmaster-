@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Botmaster - WhatsApp Marketing Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lemonada', cursive;
+      background: #e6f2ff;
+      color: #222;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: "✔ ";
+      padding-left: 20px;
+      font-size: 18px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      padding: 10px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .thank-you {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      color: green;
+      font-size: 20px;
+    }
+    .plans {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .plan {
+      background: white;
+      padding: 20px;
+      border: 2px solid #007bff;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .plan h3 {
+      margin-bottom: 10px;
+      color: #007bff;
+      font-size: 24px;
+    }
+    .plan p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .buy-btn {
+      margin-top: 15px;
+      background-color: #28a745;
+    }
+    .buy-btn:hover {
+      background-color: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #007bff;
+      color: white;
+      margin-top: 40px;
+    }
+    .whatsapp {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .email {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  </style>
+  <script>
+    function showThankYouMessage() {
+      document.getElementById('thankYouMessage').style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Botmaster</h1>
+    <p>All-in-One WhatsApp Marketing Software</p>
+  </header>
+
+  <section class="features">
+    <h2>Key Features:</h2>
+    <ul>
+      <li>Number Filter</li>
+      <li>Bulk Message Sender</li>
+      <li>Account Warmer</li>
+      <li>Multiple Account Usage</li>
+      <li>Reseller Panel</li>
+      <li>Single PC and Multi-PC Availability</li>
+    </ul>
+  </section>
+
+  <section class="plans">
+    <h2>Our Plans</h2>
+    <div class="plan">
+      <h3>Basic Plan - $10</h3>
+      <p>✔ Single PC License</p>
+      <p>✔ Valid for 1 Year</p>
+      <p>❌ No Services Included</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="plan">
+      <h3>Medium Plan - $20</h3>
+      <p>✔ Single PC License</p>
+      <p>✔ Valid for 1 Year</p>
+      <p>✔ Services Included</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+    <div class="plan">
+      <h3>Premium Plan - $80</h3>
+      <p>✔ Single PC License</p>
+      <p>✔ Valid for 5 Years</p>
+      <p>✔ Services Included</p>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xzbllbzl" method="POST" onsubmit="showThankYouMessage()">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="thankYouMessage" class="thank-you">✅ Thank you! Your message has been sent.</div>
+  </section>
+
+  <footer>
+    <p>Contact Us on WhatsApp</p>
+    <p class="whatsapp">📱 +92 318 0695616</p>
+    <p class="email">📧 usama.business12@gmail.com</p>
+  </footer>
+</body>
+</html>
